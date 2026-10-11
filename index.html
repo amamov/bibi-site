@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BiBi</title>
 <meta name="description" content="아이폰에서 내 맥의 Claude Code 에이전트에게 일을 맡기는 앱">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
 <style>
   :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #fff; --card: #f5f5f7; --accent: #f28c28; }
   @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #000; --card: #1c1c1e; } }
@@ -12,7 +15,8 @@
   main { max-width: 640px; margin: 0 auto; padding: 56px 16px 64px; }
   header { text-align: center; }
   header img { width: 120px; height: 120px; }
-  h1 { font-size: 40px; margin: 8px 0 4px; letter-spacing: -0.5px; } h1 span { color: var(--accent); }
+  h1 { font: 600 40px/1.2 "Unbounded", -apple-system, sans-serif; margin: 8px 0 4px; } /* the app's wordmark */
+  .icon { width: 1.1em; height: 1.1em; vertical-align: -0.18em; color: var(--accent); }
   .lead { color: var(--muted); margin: 0 0 32px; }
   .card { background: var(--card); border-radius: 18px; padding: 20px; margin: 16px 0; }
   .card h2 { font-size: 19px; margin: 0 0 6px; }
@@ -27,7 +31,7 @@
 <main>
   <header>
     <img src="mascot.png" alt="">
-    <h1><span>Bi</span>Bi</h1>
+    <h1>BiBi</h1>
     <p class="lead">아이폰에서 내 맥의 Claude Code 에이전트에게 일을 맡겨요.<br>서버 없이 내 iCloud로만 연결돼요.</p>
   </header>
 
@@ -49,7 +53,9 @@
       <li>맥과 아이폰을 <strong>같은 Apple 계정</strong>으로 iCloud에 로그인해요.</li>
       <li>맥에 <a href="https://docs.claude.com/en/docs/claude-code/setup">Claude Code</a>를 설치해요.</li>
       <li>DMG를 열어 BiBi를 응용 프로그램 폴더로 옮기고 실행한 뒤, 안내에 따라 BiBi 전용 Claude 로그인과 권한을 허용해요.</li>
-      <li>아이폰 BiBi를 열고 알림을 허용하면 끝. ✏️로 부탁해 보세요.</li>
+      <li>아이폰 BiBi를 열고 알림을 허용하면 끝. 오른쪽 위
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="새 대화 버튼"><path d="M11 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><path d="M17.6 3.4a2 2 0 0 1 2.9 2.9L12 14.8l-3.6.9.9-3.6z"/></svg>
+        새 대화 버튼으로 부탁해 보세요.</li>
     </ol>
   </section>
 

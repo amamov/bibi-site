@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BiBi 개인정보 처리방침</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #fff; --accent: #f28c28; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #000; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; } h1 span { color: var(--accent); }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { color: var(--fg); } .muted { color: var(--muted); font-size: 14px; }
+  hr { border: 0; border-top: 1px solid color-mix(in srgb, var(--muted) 30%, transparent); margin: 40px 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1><span>BiBi</span> 개인정보 처리방침</h1>
+  <p class="muted">시행일: 2026년 10월 11일</p>
+
+  <p>BiBi(아이폰 앱 “BiBi Agent”와 맥 앱 BiBi)는 사용자의 아이폰에서 사용자 본인의 맥에 있는 Claude Code 에이전트에게 일을 맡기는 앱입니다. 이 방침은 BiBi가 어떤 정보를 다루는지 설명합니다.</p>
+
+  <h2>1. 개발자가 수집하는 정보: 없음</h2>
+  <p>BiBi에는 개발자가 운영하는 서버나 계정이 없습니다. 개발자는 사용자의 대화, 파일, 기기 정보, 사용 기록을 수집·저장·열람하지 않으며, 광고·추적·분석 도구를 쓰지 않습니다.</p>
+
+  <h2>2. 사용자 본인의 iCloud에만 저장되는 정보</h2>
+  <p>대화 내용, 첨부 파일과 결과 파일, 승인 요청, 맥 상태(이름, 배터리, 네트워크 주소 등 깨우기에 필요한 값)는 사용자 Apple 계정의 <strong>비공개 iCloud 데이터베이스(CloudKit)</strong>에만 저장되어 같은 계정의 아이폰과 맥 사이에서만 오갑니다. 이 데이터는 Apple의 <a href="https://www.apple.com/kr/legal/privacy/">개인정보 처리방침</a>에 따라 보호되며 개발자는 접근할 수 없습니다.</p>
+
+  <h2>3. 맥에서 쓰는 외부 서비스</h2>
+  <p>맥 앱은 사용자가 설치하고 로그인한 Claude Code를 실행합니다. 사용자가 보낸 요청과 작업에 필요한 내용은 Claude Code를 통해 Anthropic으로 전송되며, 이는 사용자와 Anthropic 사이의 약관과 <a href="https://www.anthropic.com/legal/privacy">Anthropic 개인정보 처리방침</a>을 따릅니다. 브라우저 도구(Aside) 등 사용자가 연결한 도구도 각 서비스의 방침을 따릅니다.</p>
+
+  <h2>4. 기기 권한</h2>
+  <ul>
+    <li>마이크·음성 인식: 말로 요청할 때만 사용하며 녹음을 저장하지 않습니다(음성 인식은 Apple이 처리합니다).</li>
+    <li>알림: 승인 요청과 작업 완료를 알립니다.</li>
+    <li>Face ID: 큰 작업을 허용할 때 본인 확인에만 쓰며 생체 정보는 기기를 떠나지 않습니다.</li>
+    <li>맥의 화면 기록·폴더 접근: 사용자가 요청한 작업과 결과 화면 전달에만 씁니다.</li>
+  </ul>
+
+  <h2>5. 보관과 삭제</h2>
+  <p>대화는 앱에서 지우면 iCloud에서도 지워집니다. 일회성 요청 기록은 하루가 지나면 자동으로 지워집니다. 앱을 삭제하거나 iCloud 설정에서 데이터를 지우면 모두 삭제됩니다.</p>
+
+  <h2>6. 문의</h2>
+  <p>윤상석 · <a href="mailto:amamov@kakao.com">amamov@kakao.com</a></p>
+
+  <hr>
+
+  <h1><span>BiBi</span> Privacy Policy</h1>
+  <p class="muted">Effective October 11, 2026</p>
+  <p><strong>We collect nothing.</strong> BiBi has no developer-run server or account. Your conversations, files, approvals and Mac status are stored only in the private iCloud (CloudKit) database of your own Apple ID and sync between your own iPhone and Mac; the developer cannot access them. There is no advertising, tracking or analytics.</p>
+  <p>The Mac app runs the Claude Code installation you sign in to; requests you send are processed by Anthropic under your agreement with Anthropic and its <a href="https://www.anthropic.com/legal/privacy">privacy policy</a>. Microphone and speech recognition are used only while you dictate, Face ID only to confirm approvals (biometrics never leave the device), notifications for approvals and finished tasks. Deleting a conversation deletes it from iCloud; one-off records are removed after a day.</p>
+  <p>Contact: Sangseok Youn · <a href="mailto:amamov@kakao.com">amamov@kakao.com</a></p>
+</main>
+</body>
+</html>
